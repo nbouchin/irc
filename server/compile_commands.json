@@ -1,0 +1,66 @@
+[
+    {
+        "arguments": [
+            "clang",
+            "-c",
+            "-Wall",
+            "-Wextra",
+            "-Werror",
+            "-I",
+            "includes/",
+            "-o",
+            "objs/server.o",
+            "srcs/server.c"
+        ],
+        "directory": "/home/nbouchin/Documents/Projects/C/irc/server",
+        "file": "srcs/server.c"
+    },
+    {
+        "arguments": [
+            "clang",
+            "-c",
+            "-Wall",
+            "-Wextra",
+            "-Werror",
+            "-I",
+            "includes/",
+            "-o",
+            "objs/socket.o",
+            "srcs/socket.c"
+        ],
+        "directory": "/home/nbouchin/Documents/Projects/C/irc/server",
+        "file": "srcs/socket.c"
+    },
+    {
+        "arguments": [
+            "clang",
+            "-c",
+            "-Wall",
+            "-Wextra",
+            "-Werror",
+            "-I",
+            "includes/",
+            "-o",
+            "objs/user.o",
+            "srcs/user.c"
+        ],
+        "directory": "/home/nbouchin/Documents/Projects/C/irc/server",
+        "file": "srcs/user.c"
+    },
+    {
+        "arguments": [
+            "clang",
+            "-c",
+            "-Wall",
+            "-Wextra",
+            "-Werror",
+            "-I",
+            "includes/",
+            "-o",
+            "objs/main.o",
+            "srcs/main.c"
+        ],
+        "directory": "/home/nbouchin/Documents/Projects/C/irc/server",
+        "file": "srcs/main.c"
+    }
+]

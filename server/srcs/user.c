@@ -1,4 +1,4 @@
-#include "../includes/user.h"
+#include "user.h"
 
 t_user			new_user(const char *name, const int fd)
 {
@@ -10,12 +10,20 @@ t_user			new_user(const char *name, const int fd)
 	user.get_message = &user_get_message;
 	user.set_message = &user_set_message;
 
+	user.del_user = &del_user;
 	user.socket = new_socket();
 	user.bind(&user, fd);
 
 	user.set_name(&user, name);
 	memset(user.message, '\0', USER_MESSAGE_SIZE);
 	return user;
+}
+
+void			del_user(t_user *self)
+{
+	self->socket.close(&self->socket);
+	self->name[0] = '\0';
+	self->message[0] = '\0';
 }
 
 const char		*user_get_name(const t_user *const self)

@@ -9,11 +9,11 @@
             "-I",
             "includes/",
             "-o",
-            "objs/server.o",
-            "srcs/server.c"
+            "objs/main.o",
+            "srcs/main.c"
         ],
         "directory": "/home/nbouchin/Documents/Projects/C/irc/server",
-        "file": "srcs/server.c"
+        "file": "srcs/main.c"
     },
     {
         "arguments": [
@@ -25,11 +25,11 @@
             "-I",
             "includes/",
             "-o",
-            "objs/socket.o",
-            "srcs/socket.c"
+            "objs/server.o",
+            "srcs/server.c"
         ],
         "directory": "/home/nbouchin/Documents/Projects/C/irc/server",
-        "file": "srcs/socket.c"
+        "file": "srcs/server.c"
     },
     {
         "arguments": [
@@ -57,10 +57,10 @@
             "-I",
             "includes/",
             "-o",
-            "objs/main.o",
-            "srcs/main.c"
+            "objs/socket.o",
+            "srcs/socket.c"
         ],
         "directory": "/home/nbouchin/Documents/Projects/C/irc/server",
-        "file": "srcs/main.c"
+        "file": "srcs/socket.c"
     }
 ]

@@ -7,24 +7,19 @@
 int main(void)
 {
 	t_server server;
-	t_user user;
 
-	server = new_server("nbouchin");
+	server = new_server("server");
 
 	printf("%s : %d\n", server.name, server.socket.fd);
-	user = new_user("coucou", 33);
+	server.user_add(&server, "nbouchin", 42);
+	server.user_add(&server, "bnouchin", 8);
+	server.user_add(&server, "nobuchin", 2);
+	server.user_add(&server, "nbuochin", 3);
 
-	printf("%s\n", user.name);
-	user.set_name(&user, "nico");
-	printf("%s\n", user.name);
-	printf("%d\n", user.socket.fd);
+	server.user_del(&server, "nbouchin");
+	server.user_del(&server, "bnouchin");
+	server.user_del(&server, "bnouchin");
 
-	t_user user2;
-	user2 = new_user("caca", 122);
-
-	printf("%s\n", user2.name);
-	user2.set_name(&user2, "coucoucoucoucoaaaaaaaaaaaaa");
-	printf("%s\n", user2.name);
-	printf("%d\n", user2.socket.fd);
+	printf("%s\n", server.get_user(&server, "nbuochin")->name);
 	return 0;
 }

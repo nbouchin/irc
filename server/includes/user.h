@@ -18,9 +18,11 @@ typedef struct			user
 	void				(*set_message)(struct user *const self, const char *message);
 
 	void				(*bind)(struct user *const self, const int fd);
+	void				(*del_user)(struct user *self);
 }						t_user;
 
 t_user					new_user(const char *name, const int fd);
+void					del_user(t_user *self);
 void					user_bind(struct user * const self, const int fd);
 
 const char 				*user_get_name(const t_user *const self);

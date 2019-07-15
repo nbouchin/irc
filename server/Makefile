@@ -13,7 +13,7 @@
 NAME	 =	ft_irc
 CC      = 	clang
 HEADER  = 	includes/
-FLAGS   = 	-Wall -Wextra -Werror
+FLAGS   = 	-Wall -Wextra -Werror -g
 SRCDIR  = 	srcs/
 OBJDIR  = 	objs/
 
